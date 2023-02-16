@@ -1,3 +1,20 @@
+<script>
+    function showSection(sectionId) {
+        var sections = document.querySelectorAll("#menu a");
+        
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].classList.remove("active");
+        }
+
+        document.getElementById('section1').style.display = "none";
+        document.getElementById('section2').style.display = "none";
+        document.getElementById('section3').style.display = "none";
+        document.getElementById(sectionId).style.display = "block";
+        
+        event.currentTarget.classList.add("active");
+    }
+</script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +31,10 @@
         <div id="content">
             <div id="nav">
                 <div id="lefter">
-            <ul>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Works</li>
+            <ul id="menu">
+                <li><a href="#" onclick="showSection('section1')" class="active">About</a></li>
+                <li><a href="#" onclick="showSection('section2')">Skills</a></li>
+                <li><a href="#" onclick="showSection('section3')">Works</a></li>
             </ul>
             <h4>Mika Hielkema Suutari © 2023</h4>
         </div>
@@ -25,12 +42,21 @@
 
             <div id="context">
                 <div id="textbox">
-                <p>Hello! I'm a Junior Web Developer! Lorem ipsum idjmognjdoghnjsdongosdnjgodn oed ngdsng oisdnj oidnsogiinsd osdn odn</p>
-                <p>Hello! I'm a Junior Web Developer! Lorem ipsum idjmognjdoghnjsdongosdnjgodn oed ngdsng oisdnj oidnsogiinsd osdn odn</p>
-                <p>Hello! I'm a Junior Web Developer! Lorem ipsum idjmognjdoghnjsdongosdnjgodn oed ngdsng oisdnj oidnsogiinsd osdn odn</p>
-                <p>Hello! I'm a Junior Web Developer! Lorem ipsum idjmognjdoghnjsdongosdnjgodn oed ngdsng oisdnj oidnsogiinsd osdn odn</p>
-                <p>Hello! I'm a Junior Web Developer! Lorem ipsum idjmognjdoghnjsdongosdnjgodn oed ngdsng oisdnj oidnsogiinsd osdn odn</p>
-                <p>Hello! I'm a Junior Web Developer! Lorem ipsum idjmognjdoghnjsdongosdnjgodn oed ngdsng oisdnj oidnsogiinsd osdn odn</p>
+                    <div id="section1">
+                        <p>I'm Mika Hielkema Suutari, a passionate <b>junior web developer</b> based in Helsinki, Finland.</p><br>
+                        <p>I recently graduated from Taitotalo, with a degree in Information and Communication Technologies, and have been honing my skills through various online courses and hands-on projects.</p><br>
+                        <p>As a developer, I enjoy working with HTML, CSS, PHP, JavaScript, and React. I've also gained experience with frameworks like Bootstrap and content management software like Wordpress. </p><br>
+                        
+                    </div>
+
+                    <div id="section2">
+                        <p>Hello! asdasdasd</p>
+                    </div>
+
+                    <div id="section3">
+                        <p>Hello! weqweqweqewq</p>
+                    </div>
+                
                 </div>
             </div>
         </div>

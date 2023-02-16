@@ -45,6 +45,7 @@
         background-color: #9414BA;
         padding: 50px;
         overflow: auto;
+        box-shadow: inset 3px 3px 10px #ffffff7c, inset -5px -5px 10px #0000007c;
     }
 
     #textbox::-webkit-scrollbar {
@@ -78,6 +79,11 @@
         font-family: Arial, Helvetica, sans-serif;
         color: #F0F0F0;
     }
+
+    a {
+        color: #F0F0F0;
+        text-decoration: underline;
+    }
     
     ul {
         font-family: Arial, Helvetica, sans-serif;
@@ -96,12 +102,34 @@
     
     p {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 40px;
+        font-size: 30px;
         color: #F0F0F0;
         margin: 0;
         padding: 0;
     }
+
+    #menu a.active {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+  
+    #section1 {
+        display:block;
+    }
+
+    #section2 {
+        display:none;
+    }
+
+    #section3 {
+        display:none;
+    }
   }
+
+
+
+
+
 
   @media only screen and (max-width: 1200px) {
     body {
@@ -116,7 +144,7 @@
     
     #logo {
         width: 100%;
-        height: 20%;
+        height: auto;
     }
     
     #content {
@@ -130,11 +158,14 @@
 
     #nav {
         width: 100%;
-        height: 5rem;
+        height: auto;
         display:flex;
         justify-content: right;
     }
+    #lefter {
+        height: auto;
 
+    }
     #context {
         width: 95%;
         height: 100%;
@@ -146,10 +177,10 @@
     
     #textbox {
         height: 90%;
-        width: 95%;
+        width: auto;
         padding: 2rem;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        overflow-wrap: break-word;
+        box-shadow: inset 3px 3px 10px #ffffff7c, inset -3px -3px 10px #0000007c;
     }
 
     h1 {
@@ -182,6 +213,13 @@
         padding: 0;
         
     }
+
+    a {
+        color: #F0F0F0;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
     ul {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 30px;
@@ -192,13 +230,30 @@
     }
 
     li {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
+        
         float: left;
         display: block;
         text-align: center;
         padding: 10px;
+    }
+    #menu a.active {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+  
+    #section1 {
+        display:block;
+        width: 90%;
+    }
 
+    #section2 {
+        display:none;
+        width: 90%;
+    }
+
+    #section3 {
+        display:none;
+        width: 90%;
     }
   }
 
