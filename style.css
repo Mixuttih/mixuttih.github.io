@@ -148,7 +148,8 @@
         height: 90%;
         width: 90%;
         padding: 2rem;
-        overflow:auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     h1 {
@@ -175,7 +176,7 @@
 
     p {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
+        font-size: 20px;
         color: #F0F0F0;
         margin: 0;
         padding: 0;
