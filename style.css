@@ -85,7 +85,7 @@
         text-decoration: underline;
     }
     
-    ul {
+    ul#menu {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 50px;
         color: #F0F0F0;
@@ -96,8 +96,18 @@
         font-style: italic;
     }
     
-    ul li {
+    ul#menu li {
         padding: 1rem;
+    }
+
+    ul.skills {
+        list-style-type: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        color: #F0F0F0;
+    }
+    ul.skills li {
+        padding: 5px;
     }
     
     p {
@@ -220,7 +230,7 @@
         text-decoration-thickness: 2px;
     }
 
-    ul {
+    ul#menu {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 30px;
         color: #F0F0F0;
@@ -229,13 +239,24 @@
         font-style: italic;
     }
 
-    li {
+    ul#menu li {
         
         float: left;
         display: block;
         text-align: center;
         padding: 10px;
     }
+
+    ul.skills {
+        list-style-type: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        color: #F0F0F0;
+    }
+    ul.skills li {
+        padding: 5px;
+    }
+
     #menu a.active {
         font-weight: bold;
         text-decoration: underline;
