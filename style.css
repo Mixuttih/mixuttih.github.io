@@ -189,6 +189,7 @@
         height: 90%;
         width: auto;
         padding: 2rem;
+        overflow: auto;
         overflow-wrap: break-word;
         box-shadow: inset 3px 3px 10px #ffffff7c, inset -3px -3px 10px #0000007c;
     }
